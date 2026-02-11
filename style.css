@@ -1,0 +1,286 @@
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f9fbfe;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .smart-logo {
+            width: 55px;
+            height: 55px;
+            border-radius: 28px;
+        }
+
+        .heading {
+            font-weight: bold;
+            color: #323f4b;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a,
+        .sort-btn {
+            text-decoration: none;
+            color: #183b56;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 16px;
+            background: none;
+            border: none;
+        }
+
+
+        .sort-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .sort-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/1200x/0b/10/34/0b103481083582947b9b85f3e80d99d2.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .hero-box {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero p {
+            color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #183b56;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #183b56;
+        }
+
+
+        .sub-nav {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            animation: slideDown 0.4s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .sub-btn {
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: none;
+            background: #323f4b;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .menu-nav {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: 1px solid #f59e0b;
+            background: white;
+            color: #f59e0b;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+
+        .foods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .card {
+            background: #fff9f0;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #16a34a;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 10px;
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+
+        .available {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .sold {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .hyg {
+            border-radius: 38px;
+        }
+
+        .why-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .why-card {
+            background: #fff9f0;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .why-card img {
+            width: 70px;
+            margin-bottom: 15px;
+        }
+
+        .why-card h4 {
+            color: #183b56;
+        }
+
+        .why-card p {
+            font-size: 14px;
+            color: #64748b;
+        }
+    
